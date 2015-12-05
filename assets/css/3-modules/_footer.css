@@ -1,0 +1,14 @@
+footer {
+  background: url() center center;
+  background-size: cover;
+  background: orange;
+}
+
+footer .lockup {
+  padding: 30px;
+}
+
+footer .lockup .logo {
+  width: 50px;
+  height: 50px;
+}
