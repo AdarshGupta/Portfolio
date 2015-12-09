@@ -1,0 +1,19 @@
+h3 {
+  color: #BD5248;
+  text-align: center;
+}
+
+.face-lockup {
+  max-width: 780px;
+  display: flex;
+  background: pink;
+}
+
+.face-lockup .face-img {
+  background-size: 200px;
+  background: url(../img/face.jpg);
+}
+
+.face-lockup [class^="icon-"] {
+  background-size: 100px;
+}

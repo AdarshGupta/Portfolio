@@ -278,7 +278,7 @@ body {
 }
 
 body {
-  background: #F6F6F8;
+  background: #FFF;
   font-size: 14px;
   line-height: 1.6;
   font-family: 'Open Sans' sans-serif;
@@ -287,7 +287,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-header nav a, footer .lockup .content-wrap a {
+header nav a, footer .lockup .content-wrap a, h3 {
   font-size: 14px;
   weight: 700;
   text-transform: uppercase;
@@ -393,4 +393,83 @@ footer .lockup .content-wrap a {
 
 footer .lockup .content-wrap a:hover {
   color: rgba(0, 0, 0, 0.7);
+}
+
+h3 {
+  color: #BD5248;
+  text-align: center;
+  padding: 100px 0 30px;
+}
+
+.face-lockup {
+  max-width: 780px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.face-lockup .face-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background: url(/assets/img/face.jpg);
+  order: 3;
+}
+
+.face-lockup [class^="icon-"] {
+  width: 100px;
+  height: 100px;
+  background: #ddd;
+  border-radius: 50%;
+}
+
+.face-lockup [class^="icon-"] path {
+  fill: #BD5248;
+}
+
+.face-lockup [class^="icon-"].icon-pencil {
+  order: 1;
+}
+
+.face-lockup [class^="icon-"].icon-mouse {
+  order: 2;
+}
+
+.face-lockup [class^="icon-"].icon-browser {
+  order: 4;
+}
+
+.face-lockup [class^="icon-"].icon-video {
+  order: 5;
+}
+
+@media screen and (max-width: 650px) {
+  .face-lockup {
+    display: block;
+    text-align: center;
+  }
+  .face-lockup div {
+    display: inline-block;
+  }
+  .face-lockup .face-img {
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: auto;
+    margin-bottom: 30px;
+  }
+  [class^="icon-"] {
+    margin: 10px;
+  }
+}
+
+.blurb {
+  max-width: 620px;
+  padding: 0 15px;
+  margin: 50px auto;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 300;
 }
