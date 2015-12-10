@@ -3,14 +3,14 @@ h3
   @extend %small-bold
   text-align: center
   padding: 100px 0 30px
-
+/* h3 is a general style so can be put under 2-base _base.sass in body section */
 .face-lockup
   max-width: 780px
   display: flex
   //background: pink
   margin: 0 auto
   align-items: center
-  justify-content: space-around
+  justify-content: space-between
 
   
   .face-img
@@ -18,7 +18,6 @@ h3
     height: 200px
     border-radius: 50%
     background-size: cover
-    background: url(/assets/img/face.jpg)
     order: 3
 
   [class^="icon-"]

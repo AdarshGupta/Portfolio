@@ -17,6 +17,12 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+#site default images and content here!
+bg-img: thunder.png
+avatar: face.jpg
+blurb: <p><strong>Sartorial ugh distillery narwhal </strong>ethical semiotics beard craft beer squid. Kombucha waistcoat neutra bitters. Irony health goth pork belly organic chillwave meditation. Normcore echo park master cleanse post-ironic artisan asymmetrical, lo-fi vinyl sriracha drinking vinegar kitsch fanny pack microdosing. </p>
+
+
 # Build settings
 
 markdown: kramdown
