@@ -19,7 +19,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  overflow: hidden;
+  perspective: 300px;
 }
 
 @media screen and (max-width: 760px) {
@@ -31,17 +31,19 @@
 
 .alt-section .thumb-container .thumb-unit .thumb-overlay {
   position: absolute;
-  top: 100%;
+  top: 0%;
   bottom: null;
   left: 0;
   right: 0;
   height: 100%;
-  background: rgba(255, 0, 0, 0.5);
+  background: rgba(255, 0, 0, 0.9);
   text-align: center;
-  transition: linear 0.3s;
+  transition: linear 0.5s;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  opacity: 0;
+  transition: opacity, 300ms, ease-in, 500ms;
 }
 
 .alt-section .thumb-container .thumb-unit .thumb-overlay strong {
@@ -54,10 +56,10 @@
   line-height: 1.2;
 }
 
+.alt-section .thumb-container .thumb-unit:hover {
+  z-index: 1;
+}
+
 .alt-section .thumb-container .thumb-unit:hover .thumb-overlay {
-  position: absolute;
-  top: 0%;
-  bottom: null;
-  left: 0;
-  right: 0;
+  opacity: 1;
 }
